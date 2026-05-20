@@ -3,9 +3,11 @@
 ## Ejercicio 1: Resolver una ecuación cuadrática
 
 Escriba un programa para resolver una ecuación cuadrática. Una ecuación es cuadrática cuando tiene la forma:
+
 ![image](image.png), 
 
 y donde las soluciones se pueden encontrar utilizando la fórmula: 
+
 ![image](image_2.png) 
 
 Solicite al usuario que ingrese los coeficientes de la ecuación utilizando 3 instrucciones `input()`, luego muestre el resultado de las dos soluciones como se indica en el ejemplo: 
