@@ -1,35 +1,171 @@
-# u2pa01: Inputs y Recortes
+# U2PA01 — Inputs y Recortes
 
-## Ejercicio 1: Resolver una ecuación cuadrática
+## Objetivo
 
-Escriba un programa para resolver una ecuación cuadrática. Una ecuación es cuadrática cuando tiene la forma:
+Aplicar:
 
-![image](image.png), 
+- entrada de datos con `input()`
+- operaciones aritméticas
+- uso de fórmulas matemáticas
+- manejo de cadenas
+- slicing y `.find()`
+- formato de salida
 
-y donde las soluciones se pueden encontrar utilizando la fórmula: 
+---
+
+# Ejercicio 1 — Resolver una ecuación cuadrática
+
+Una ecuación cuadrática tiene la forma:
+
+![image](image.png)
+
+Las soluciones se calculan mediante:
 
 ![image](image_2.png) 
 
-Solicite al usuario que ingrese los coeficientes de la ecuación utilizando 3 instrucciones `input()`, luego muestre el resultado de las dos soluciones como se indica en el ejemplo: 
+## Requerimientos
 
+Crear el archivo:
+
+```text
+ejercicio1.py
 ```
+
+Solicitar al usuario:
+
+```text
+Ingrese el coeficiente a:
+Ingrese el coeficiente b:
+Ingrese el término independiente c:
+```
+
+Ejemplo:
+
+```text
 Ingrese el coeficiente a: 1
 Ingrese el coeficiente b: -11
 Ingrese el término independiente c: 24
-x1: 3.00
-x2: 8.00
+x1: 8.00
+x2: 3.00
 ```
 
-Las raíces deben mostrarse con dos decimales de precisión.
+## Restricciones
 
-## Ejercicio 2: Resolver una ecuación cuadrática (b)
+- Debe usar 3 instrucciones `input()`
+- Mostrar las raíces con 2 decimales
 
-Resolver el ejercicio anterior pero cambiar la forma de pedir los datos al usuario con una sola instrucción `input`. De la siguiente manera: 
+---
 
+# Ejercicio 2 — Resolver una ecuación cuadrática (b)
+
+Crear el archivo:
+
+```text
+ejercicio2.py
 ```
-Ingrese los coeficientes a, b, y c de la ecuación separados por espacios: 4 -12 5
-x1: -2.50
-x2: -0.50
+
+Solicitar los coeficientes usando UNA SOLA instrucción `input()`.
+
+Ejemplo:
+
+```text
+Ingrese los coeficientes a, b y c separados por espacios: 4 -12 5
+x1: 2.50
+x2: 0.50
 ```
 
-En este ejercicio no utilice `.split()` y solo utilice `.find()` y slicing para obtener los coeficientes `a`, `b` y `c` del texto ingresado.
+## Restricciones
+
+- NO usar `.split()`
+- SOLO usar:
+  - `.find()`
+  - slicing
+- Mostrar las raíces con 2 decimales
+
+---
+
+# Estructura esperada
+
+```text
+.
+├── ejercicio1.py
+├── ejercicio2.py
+├── README.md
+└── tests/
+```
+
+---
+
+# Ejecución
+
+## Ejercicio 1
+
+```bash
+python ejercicio1.py
+```
+
+## Ejercicio 2
+
+```bash
+python ejercicio2.py
+```
+
+---
+
+# Entrega
+
+La entrega se realiza mediante:
+
+```bash
+git add .
+git commit -m "Entrega PA01"
+git push
+```
+
+---
+
+# IMPORTANTE — Commits obligatorios
+
+Debe existir un mínimo de 3 commits:
+
+1. Estructura inicial
+2. Solución ejercicio 1
+3. Solución ejercicio 2 y correcciones
+
+Repositorios con un único commit podrán ser revisados manualmente.
+
+---
+
+# Evaluación automática
+
+El sistema verificará automáticamente:
+
+- ejecución correcta
+- resultados matemáticos
+- formato de salida
+- precisión decimal
+- prohibición de `.split()`
+- errores de ejecución
+
+---
+
+# Recomendaciones
+
+- Realice commits frecuentes
+- Pruebe sus programas antes de subirlos
+- Revise la pestaña:
+  
+```text
+Actions
+```
+
+para verificar si las pruebas automáticas fueron aprobadas.
+
+---
+
+# Integridad académica
+
+Debe comprender completamente su solución.
+
+El profesor podrá solicitar sustentación individual del código desarrollado.
+
